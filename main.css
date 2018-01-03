@@ -103,7 +103,6 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-rows: 1fr
 }
-
 .section-3-box:nth-child(1) {
     background-color: #B66033;
     background-image: url('./assets/beet.png');
@@ -166,7 +165,51 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: #F4D2A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.section-4-title {
+    width: 350px;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+
+.section-4-title div:nth-child(1) {
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.section-4-title div:nth-child(2) {
+    font-size: 20px;
+}
+
+.section-4-graph-zone {
+    width: 600px;
+    height: 550px;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+.section-4-graph {
+    width: 100%;
+}
+
+.section-4-graph-header td {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.section-4-main {
+    position: relative;
+    display: flex;
+}
+
 
 .section-3-box-text {
     color: white;
@@ -298,4 +341,20 @@ html, body {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
     cursor: pointer;
+}
+
+.blank {
+    padding-bottom: 35px;
+}
+
+.bordered th {
+    border-bottom: 1px solid black;
+}
+
+tr td:nth-child(2), tr td:nth-child(3) {
+    text-align: right;
+}
+
+td td:nth-child(1) {
+    text-align: left;
 }
