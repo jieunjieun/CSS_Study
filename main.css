@@ -21,6 +21,10 @@ html, body {
     position: relative;
 }
 
+.menu-list:hover {
+    font-weight: bold;
+}
+
 .section-1-menu {
     width: auto;
     height: 150px;
@@ -142,7 +146,9 @@ html, body {
     background-color: white;
     height: 40px;
     width: 4px;
-    position: relative;
+    position: absolute;
+    margin-top: 150px;
+    cursor: pointer;
 }
 
 .cross::after {
@@ -228,4 +234,19 @@ html, body {
 
 .side-menu-box:hover {
     background-color: rgb(240, 106, 98)
+}
+
+
+.order-now {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #e5e5e5;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
 }
