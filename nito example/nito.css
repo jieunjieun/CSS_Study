@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Cookie');
 @import url('https://fonts.googleapis.com/css?family=Heebo:700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 html, body {
     overflow-x: hidden;
@@ -33,7 +34,6 @@ html, body {
 }
 
 .section-1-main {
-    /* position: absolute; */
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -41,7 +41,7 @@ html, body {
     align-items: center;
     flex-direction: column;
     position: absolute;
-    z-index: 4;
+    z-index: 2;
 }
 
 .section-1-main-firstline div {
@@ -139,3 +139,94 @@ html, body {
     color: #353535;
 }
 
+
+/* section-2 */
+
+.section-2 {
+    width: 100vw;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.section-2-description {
+    width: 500px;
+    height: 400px;
+    /* border: 1px solid black; */
+    margin-right: 100px;
+    position: relative;
+}
+
+.section-2-image {
+    width: 500px;
+    height: 400px;
+    background-image: url('./assets/section-2-background.png');
+    background-position: center;
+    background-size: 112% 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.section-2-description-type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #747474;
+}
+.line {
+    width: 65px;
+    height: 2px;
+    background-color: #747474;
+    display: block;
+    margin: 30px 0 30px 0;
+}
+
+.section-2-description-title {
+    margin-bottom: 30px;
+}
+
+.section-2-description-title div {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+.section-2-description-title-italic {
+    display: inline-block;
+    font-style: italic;
+}
+
+.section-2-description-title-normal {
+    display: inline-block;
+}
+
+.section-2-description-content {
+    width: 440px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;    
+    color: #A6A6A6;
+    line-height: 23px;
+    letter-spacing: 1px;
+}
+
+.read_more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20px;
+    border-bottom: 2px solid #747474;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #747474;
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 30px;
+    height: 100%;
+    background-color: white;
+}
