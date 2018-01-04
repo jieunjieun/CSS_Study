@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+@import url('https://fonts.googleapis.com/css?family=Heebo:700');
+
 html, body {
     overflow-x: hidden;
     padding: 0;
@@ -12,6 +15,78 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: white;
+    background-image: url('./assets/section-1-background.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center
+}
+
+.section-1::after {
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 1;
+}
+
+.section-1-main {
+    /* position: absolute; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 4;
+}
+
+.section-1-main-firstline div {
+    display: inline-block;
+    color: white;
+    letter-spacing: 1px;
+    line-height: 100px;
+}
+
+.section-1-main-firstline div:nth-child(1) {
+    font-family: 'Cookie', cursive;
+    font-style: italic;
+    margin-right: 20px;
+    font-size: 100px;
+}
+
+.section-1-main-firstline div:nth-child(2) {
+    font-family: 'Heebo', sans-serif;
+    font-size: 80px;
+}
+
+.section-1-main-secondline {
+    display: inline-block;
+    font-size: 80px;
+    color: white;
+    letter-spacing: 1;
+    font-family: 'Heebo', sans-serif;    
+    line-height: 100px;
+}
+
+.section-1-main-button {
+    width: 135px;
+    height: 45px;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: white;
+    margin-top: 35px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #747474;
+    cursor: pointer;
 }
 
 /* section-1-상단바 */
@@ -22,6 +97,8 @@ html, body {
     background-color: white;
     display: flex;
     align-items: center;
+    position: absolute;
+    z-index: 3;
 }
 
 .topbar-logo {
