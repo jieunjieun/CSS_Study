@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html, body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+/* section-1  */
+
+.section-1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+/* section-1-상단바 */
+
+.topbar {
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-logo {
+    width: 100px;
+    height: 30px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.topbar-menu {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbar-menu div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    color: gray;
+}
+
+.topbar-menu div:hover {
+    color: #353535;
+}
+
