@@ -1,0 +1,239 @@
+/* .element {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation: square-to-circle 2s 1s infinite cubic-bezier(0.320, 0.710, 0.350, 0.745) alternate;
+}
+
+@keyframes square-to-circle {
+    0%{
+        border-radius: 0 0 0 0;
+        background-color: coral;
+        transform: rotate(0deg);
+    }
+    25%{
+        border-radius: 50% 0 0 0;
+        background-color: darksalmon;
+        transform: rotate(45deg);
+    }
+    50%{
+        border-radius: 50% 50% 0 0;
+        background-color: indianred;
+        transform: rotate(90deg);
+    }
+    75%{
+        border-radius: 50% 50% 50% 0;
+        background-color: lightcoral;
+        transform: rotate(135deg);
+    }
+    100%{
+        border-radius: 50%;
+        background-color: darksalmon;
+        transform: rotate(180deg);
+    }
+} */
+
+/* .pixel-man-walking {
+    width: 104px;
+    height: 150px;
+    background-image: url('./walking.png');
+    animation: pmw 1s steps(6) infinite;
+    display: inline-block;
+    position: relative;
+}
+
+@keyframes pmw {
+    0% {
+        background-position: 0
+    }
+
+    100% {
+        background-position: -624px;
+    }
+}
+
+.walking-man {
+    width: 183px;
+    height: 320px;
+    background-image: url('./walking man.png');
+    animation: wkm 1s steps(8) infinite;
+    position: relative;
+    display: inline-block;
+
+}
+
+@keyframes wkm {
+    0% {
+        background-position: 0
+    }
+
+    100% {
+        background-position: -1471px;
+    }
+}
+
+.down-man {
+    width: 140px ;
+    height: 230px;
+    background-image: url('./down.png');
+    animation: dwm 1.5s steps(7) infinite alternate;
+    position: relative;
+    display: inline-block;
+    
+}
+
+@keyframes dwm {
+    0% {
+        background-position: 0 0;
+    }
+    49.999% {
+        background-position: -980px 0px;
+    }
+
+    50% {
+        background-position: 0 230px;
+    }
+
+    100% {
+        background-position: -980px 230px;
+    }
+}
+
+.airline {
+    width: 100%;
+    height: 400px;
+}
+
+.airplane {
+    width: 100px;
+    height: 80px;
+    background-image: url('./airplane.png');
+    background-size: 100px;
+    height: 80px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: 200px
+}
+
+@keyframes airplane {
+    0% {
+
+    }
+}
+ */
+
+ /* .rotate {
+     transform: rotate(35deg);
+     width: 80px;
+     height: 80px;
+     border-radius: 100%;
+     border: 2px solid orange;
+     border-top: 2px solid transparent;
+     border-bottom: 2px solid transparent;
+     animation: rot 1s infinite;
+ }
+
+#rotate-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.rotate {
+    position: absolute;
+}
+
+.loading-text {
+    position: absolute;
+    font-size: 13px;
+    color: orange;
+    animation: loadT 1s infinite alternate;
+}
+
+@keyframes loadT {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+
+
+ @keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+ } */
+
+/* 
+ #pacman {
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid red;
+    border-left: 60px solid red;
+    border-bottom: 60px solid red;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  } */
+
+  .heart {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: auto;
+      margin-top: 100px;
+      transform: rotate(45deg);
+      animation: heartout 2s;
+  }
+
+
+  .heart:hover {
+    animation: heartin 5s infinite;
+}
+
+  .heart::after, .heart::before {
+      content: "";
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      position: absolute;
+  }
+
+  .heart::before {
+      left: 0;
+      top: -50px;
+  }
+
+  .heart::after {
+      left: -50px;
+      top: 0
+  }
+
+  @keyframes heartin {
+    to {
+        transform: rotate(405deg)
+    }
+  }
+
+  @keyframes heartout {
+    to {
+        transform: rotate(45deg)
+    }
+  }
+
+  
