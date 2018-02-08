@@ -305,11 +305,150 @@ html, body {
 /* section-4 */
 
 .section-4 {
+    width: 100vw;
+    height: 750px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.section-4-box {
-    width: 600px;
-    height: 400px;
-    border: 1px solid black;
+
+.section-4-header {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.section-4-sentence {
+    position: absolute;
+    right: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+.section-4-sentence span {
+    font-style: italic;
+}
+
+.section-4-body {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.section-4-left {
+    width: 500px;
+    height: 500px;
+    margin-right: 25px;
+    background-color: #F7F7F7;
+    background-image: url('./assets/section-4-left-image.png');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.section-4-right {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.section-4-right-box {
+    background-color: #F7F7F7;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.section-4-description-type {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    color: #747474;
+}
+
+.section-4-left-box-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+}
+
+.section-4-left-box-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.section-4-left-box-price {
+    font-size: 14px;
+    color: #747474;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+.section-4-right-box:nth-child(1) {
+    background-image: url('./assets/section-4-right-image1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+}
+
+.section-4-right-box:nth-child(2) {
+    background-image: url('./assets/section-4-right-image2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+}
+
+.section-4-right-box:nth-child(3) {
+    background-image: url('./assets/section-4-right-image3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40% auto;
+}
+
+.section-4-right-box:nth-child(4) {
+    background-image: url('./assets/section-4-right-image4.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 44% auto;
+}
+
+.section-4-right-box-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+}
+
+.section-4-right-box-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    font-size: 11px;
+}
+
+.section-4-right-box-price {
+    font-size: 10px;
+    color: #747474;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
 }
