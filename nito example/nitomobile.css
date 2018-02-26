@@ -1,0 +1,133 @@
+@media (max-width: 380px) {
+    .section-1 {
+        width: 100vw;
+        height: 40vh;
+        background-color: white;
+        background-image: url('./assets/section-1-background.jpg');
+        background-size: 100% 100%;
+        background-position: center;
+        display: flex;
+        justify-content: center
+    }
+    
+    .section-1::after {
+        width: 100vw;
+        height: 40vh;
+        content: "";
+        background-color: black;
+        opacity: 0.3;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .section-1-main {
+        width: 100vw;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .section-1-main-firstline div {
+        display: inline-block;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 50px;
+    }
+    
+    .section-1-main-firstline div:nth-child(1) {
+        font-family: 'Cookie', cursive;
+        font-style: italic;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    
+    .section-1-main-firstline div:nth-child(2) {
+        font-family: 'Heebo', sans-serif;
+        font-size: 25px;
+    }
+    
+    .section-1-main-secondline {
+        display: inline-block;
+        font-size: 30px;
+        color: white;
+        letter-spacing: 1;
+        font-family: 'Heebo', sans-serif;    
+        line-height: 30px;
+    }
+
+    .section-1-main-button {
+        width: 100px;
+        height: 25px;
+        border: 1px solid #e5e5e5;
+        border-radius: 2px;
+        background-color: white;
+        margin-top: 35px;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 6px;
+        letter-spacing: 1.5px;
+        color: #747474;
+        cursor: pointer;
+    }
+    /* section-1-상단바 */
+
+    .topbar {
+        width: 100vw;
+        height: 70px;
+        display: flex;
+        background-color: transparent !important;
+        align-items: center;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .topbar-logo {
+        width: 100px;
+        height: 30px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Merriweather', serif;
+        font-weight: bold;
+        color: white;
+        font-size: 22px;
+    }
+
+    .topbar-menu {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+
+    .topbar-menu div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 20px;
+        margin-right: 10px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        cursor: pointer;
+        color: gray;
+    }
+
+    .topbar-menu div:hover {
+        color: #353535;
+    }    
+    
+    
+    
+    
+}
